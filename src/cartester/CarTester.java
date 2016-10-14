@@ -5,7 +5,7 @@
  */
 
 package cartester;
-
+import java.util.Scanner;
 /**
  *
  * @author nohin6777
@@ -20,11 +20,28 @@ public class CarTester {
         Car car2 = new Car("Ferrari", "Enzo");
         Car car3 = new Car("Bugatti", "Veyron", 2700000, 409);
         
-        System.out.println(car1.ToString() + "-----------");
+        System.out.println("Would you like to hear about a: Bugatti, Ferrari,"
+                + "or Lamborghini");
         
-        System.out.println(car2.ToString() + "-----------");
+        Scanner userCar = new Scanner(System.in);
+        String userInput = userCar.nextLine();
         
-        System.out.println(car3.ToString() + "-----------");
+        if(userInput.equalsIgnoreCase("Lamborghini")){
+            System.out.println("\n" + car1.ToString() + "-----------");  
+        }else if(userInput.equalsIgnoreCase("Ferrari")){
+            System.out.println("\n" + car2.ToString() + "-----------");
+        }else if(userInput.equalsIgnoreCase("Bugatti")){
+            System.out.println("\n" + car3.ToString() + "-----------");
+        }else{
+            System.out.println("Please enter either 'Lamborghini' 'Ferrari' or 'Bugatti'");
+        }
+        
+        
+        
+        
+        
+        
+        
     }
         
 }

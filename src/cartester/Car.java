@@ -71,7 +71,7 @@ public String ToString(){
     Output += "Price: " + price + "\n";
     Output += "Year: " + year + "\n";
     Output += "Mileage: " + mileage + "\n";
-    Output += "Top Speed: " + topSpeed + "\n";
+    Output += "Top Speed: " + topSpeed + "Kmph \n";
     
     return Output;
 }
